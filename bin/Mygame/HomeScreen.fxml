@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="field" focusTraversable="true" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" onKeyPressed="#handle" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mygame.HomeScreenController">
+   <children>
+      <ImageView fx:id="title" fitHeight="326.0" fitWidth="603.0" layoutX="99.0" layoutY="56.0" visible="false">
+         <image>
+            <Image url="@Image/battle%20bistro.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="synopisis" fitHeight="140.0" fitWidth="180.0" layoutX="110.0" layoutY="404.0" onMouseMoved="#SynopisisDetected" visible="false">
+         <image>
+            <Image url="@../MenuButton/menuButton%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="quit" fitHeight="140.0" fitWidth="180.0" layoutX="510.0" layoutY="404.0" onMouseMoved="#QuitDetected" visible="false">
+         <image>
+            <Image url="@../MenuButton/menuButton%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="start" fitHeight="140.0" fitWidth="180.0" layoutX="310.0" layoutY="404.0" onMouseMoved="#StartDetected" visible="false">
+         <image>
+            <Image url="@../MenuButton/menuButton%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beer" fitHeight="551.0" fitWidth="558.0" layoutX="144.0" layoutY="25.0">
+         <image>
+            <Image url="@../Opening/opening%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fx:id="Tstart" layoutX="372.0" layoutY="484.0" onMouseClicked="#StartPressed" onMouseExited="#UnStart" onMouseMoved="#HiStart" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="開始">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="Tquit" layoutX="572.0" layoutY="482.0" onMouseClicked="#ExitPressed" onMouseExited="#UnQuit" onMouseMoved="#HiQuit" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="退出">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="Tsynopisis" layoutX="172.0" layoutY="483.0" onMouseClicked="#SynopsisPressed" onMouseExited="#UnSynopisis" onMouseMoved="#HiSynopisis" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="規則">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="bouble" fitHeight="614.0" fitWidth="822.0" layoutX="-10.0" layoutY="-10.0" visible="false">
+         <image>
+            <Image url="@../Opening/bouble%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
